@@ -14,7 +14,7 @@ import psycopg2
 ######### SETTING UP ##########
 
 ###Database Connect###
-conn=psycopg2.connect("dbname=CaseNet user=postgres password=tomcat")
+conn=psycopg2.connect("dbname=CaseNet user=postgres password=")
 cur=conn.cursor()
 SQL="INSERT INTO casenums_2011_13_Compare (casenum, casedate, casecourt, querydate) VALUES (%s, %s, %s, %s);"
 
